@@ -8,12 +8,12 @@
 
 ## Overview
 ### Description
-This is an App that helps a group of people to split money more conveniently. It could be the situation when splitting money with your roommates, or with your friends for a travle. All you need to do is to add the group memebers' names and the money each member spend that needs to be splitted, we will generate a bill (or receipt) for each member with the amount they need to pay (or need to receive).
+This is an App that helps a group of people to split money more conveniently. It could be the situation when splitting the money with your roommates, or with your friends for a journey. All you need to do is to add the group members' names and the money each member spends that needs to be split, we will generate a bill (or receipt) for each member with the amount they need to pay (or need to receive).
 
 ### App Evaluation
 - **Category:** FinTech App
 - **Mobile:** iOS
-- **Story:** This is an App that helps a group of people to split money more conveniently. It could be the situation when splitting money with your roommates, or with your friends for a travle. All you need to do is to add the group memebers' names and the money each member spend that needs to be splitted, we will generate a bill (or receipt) for each member with the amount they need to pay (or need to receive).
+- **Story:** This is an App that helps a group of people to split money more conveniently. It could be the situation when splitting the money with your roommates, or with your friends for a journey. All you need to do is to add the group members' names and the money each member spends that needs to be split, we will generate a bill (or receipt) for each member with the amount they need to pay (or need to receive).
 - **Market:** Any individual could choose to use this app, and to keep it a safe environment, people just need to enter different group name to track their split bill.
 - **Habit:** This app could be used as often or unoften as the user wanted depending on how often he or she is evolved with a group of people who need to split money within the group.
 - **Scope:** First we would ask the user to enter an event and the group members for this event and help them split money with each member's financial activities. Then this app could evolve to a personal or group financial management app for them to track their spending.
