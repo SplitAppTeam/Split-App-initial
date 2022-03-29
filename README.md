@@ -69,7 +69,7 @@ Optional:
 * Settings -> Toggle settings
 
 ## Wireframes
-Not yet available
+![](https://i.imgur.com/6YJk7KH.jpg)
 
 ### [BONUS] Digital Wireframes & Mockups
 
