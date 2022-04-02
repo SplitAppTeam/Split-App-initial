@@ -81,7 +81,7 @@ Optional:
 [Add table of models]
 ### Networking
 
-#### list of network requests by screen ]
+#### list of network requests by screen
 
 - Home Feed Screen
 (Create/POST) Create a new event
@@ -91,7 +91,7 @@ Optional:
 (GET) Get all events
 
 - Create event Screen
-(Create/POST) Create a new even object
+(Create/POST) Create a new event object
 (create/POST) Create a new member object
 
 - Profile Screen
@@ -101,15 +101,15 @@ Optional:
 #### basic snippets for each Parse network request
 - (Read/GET) Query all events where user is author
   ```
-  let query = PFQuery(className:"Post")
+  let query = PFQuery(className:"Event")
   query.whereKey("author", equalTo: currentUser)
   query.order(byDescending: "createdAt")
-  query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+  query.findObjectsInBackground { (events: [PFObject]?, error: Error?) in
      if let error = error { 
         print(error.localizedDescription)
-     } else if let posts = posts {
-        print("Successfully retrieved \(posts.count) posts.")
-    // TODO: Do something with posts...
+     } else if let events = events {
+        print("Successfully retrieved \(events.count) events.")
+    // TODO: Do something with events...
      }
   }
   ```
