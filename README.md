@@ -78,7 +78,21 @@ Optional:
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
+#### Event
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User| image author |
+   | image         | File     | image that user posts |
+   | caption       | String   | image caption by author |
+   | event count   | number of events that has been created by the author |
+   | Wait to pay   |  Number   | number of events that waiting to get paied |
+   | Wait to close | Number    | number of events that are paid by the user but not totally paied back yet|
+   | createdAt     | DateTime | date when post is last updated (default field) |
+   | updatedAt     | DateTime | date when post is last updated (default field) |
+
 ### Networking
 
 #### list of network requests by screen
