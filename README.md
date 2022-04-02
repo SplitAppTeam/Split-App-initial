@@ -85,27 +85,27 @@ Optional:
 
 - Home Feed Screen
 
-(Create/POST) Create a new event
+  (Create/POST) Create a new event
 
-(Delete) Delete exisiting event
+  (Delete) Delete exisiting event
 
-(Create/POST) Create a new member in the event
+  (Create/POST) Create a new member in the event
 
-(Delete) Delete existing member
+  (Delete) Delete existing member
 
-(GET) Get all events
+  (GET) Get all events
 
 - Create event Screen
 
-(Create/POST) Create a new event object
+  (Create/POST) Create a new event object
 
-(create/POST) Create a new member object
+  (create/POST) Create a new member object
 
 - Profile Screen
 
-(Read/GET) Query logged in user object
+  (Read/GET) Query logged in user object
 
-(Update/PUT) Update user profile image
+  (Update/PUT) Update user profile image
 
 #### basic snippets for each Parse network request
 - (Read/GET) Query all events where user is author
