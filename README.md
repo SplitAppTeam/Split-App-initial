@@ -87,9 +87,9 @@ Optional:
    | author        | Pointer to User| image author |
    | image         | File     | image that user posts |
    | caption       | String   | image caption by author |
-   | event count   | number of events that has been created by the author |
-   | Wait to pay   |  Number   | number of events that waiting to get paied |
-   | Wait to close | Number    | number of events that are paid by the user but not totally paied back yet|
+   | event count   | number   | number of events that has been created by the author |
+   | Wait to pay   |  Number  | number of events that waiting to get paied |
+   | Wait to close | Number   | number of events that are paid by the user but not totally paied back yet|
    | createdAt     | DateTime | date when post is last updated (default field) |
    | updatedAt     | DateTime | date when post is last updated (default field) |
 
