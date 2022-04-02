@@ -123,4 +123,4 @@ Optional:
   }
   ```
 
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+[OPTIONAL: List endpoints using existing Paypal API]
