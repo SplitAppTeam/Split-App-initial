@@ -109,6 +109,12 @@ Optional:
 
   (GET) Get all events
 
+- Waiting List Screen
+  
+  (GET) Get the events that are waiting to pay
+  
+  (GET) Get the events that are waiting to close
+
 - Create event Screen
 
   (Create/POST) Create a new event object
