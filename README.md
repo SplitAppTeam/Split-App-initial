@@ -80,6 +80,38 @@ Optional:
 ### Models
 [Add table of models]
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
+
+#### list of network requests by screen ]
+
+- Home Feed Screen
+(Create/POST) Create a new event
+(Delete) Delete exisiting event
+(Create/POST) Create a new member in the event
+(Delete) Delete existing member
+(GET) Get all events
+
+- Create event Screen
+(Create/POST) Create a new even object
+(create/POST) Create a new member object
+
+- Profile Screen
+(Read/GET) Query logged in user object
+(Update/PUT) Update user profile image
+
+#### basic snippets for each Parse network request
+- (Read/GET) Query all events where user is author
+  ```
+  let query = PFQuery(className:"Post")
+  query.whereKey("author", equalTo: currentUser)
+  query.order(byDescending: "createdAt")
+  query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+     if let error = error { 
+        print(error.localizedDescription)
+     } else if let posts = posts {
+        print("Successfully retrieved \(posts.count) posts.")
+    // TODO: Do something with posts...
+     }
+  }
+  ```
+
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
