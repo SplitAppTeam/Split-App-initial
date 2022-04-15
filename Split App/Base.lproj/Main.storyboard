@@ -111,6 +111,7 @@
                         <outlet property="passwordField" destination="6QK-dT-Rmg" id="quW-QI-UTl"/>
                         <outlet property="usernameField" destination="tB3-Uw-gfy" id="EUA-Li-Ox5"/>
                         <segue destination="GEg-iS-sSm" kind="presentation" identifier="loginSegue" id="uvi-wZ-lxT"/>
+                        <segue destination="DrL-n6-cYh" kind="presentation" identifier="loginErrorSegue" id="AAm-8k-EU1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -145,6 +146,9 @@
                     <navigationItem key="navigationItem" id="HUk-Rh-Rdr">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="vwD-70-2xj">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backToLogin:" destination="DbK-ef-atR" id="LpD-v9-b7O"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add an event" id="uka-nr-0hj" customClass="addAnEvent">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -156,6 +160,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pk1-LU-uXl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="DbK-ef-atR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1743.4782608695652" y="66.964285714285708"/>
         </scene>
@@ -232,6 +237,70 @@
             </objects>
             <point key="canvasLocation" x="2542.0289855072465" y="66.964285714285708"/>
         </scene>
+        <!--Login Error-->
+        <scene sceneID="wk1-Zk-lqi">
+            <objects>
+                <tableViewController id="7si-VI-bbQ" customClass="LoginErrorViewContoller" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="vGo-xN-l4m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="4iZ-7X-fdc">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="788"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username/Password is incorrect." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0X-7E-iiY">
+                                    <rect key="frame" x="50" y="120" width="314" height="22"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUw-Lw-Kwp">
+                                    <rect key="frame" x="125" y="176" width="120" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Back">
+                                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="onLoginError:" destination="7si-VI-bbQ" eventType="touchUpInside" id="4GL-IC-8cY"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="h0X-7E-iiY" secondAttribute="trailing" constant="50" id="CJ3-k6-LPj"/>
+                                <constraint firstItem="h0X-7E-iiY" firstAttribute="top" secondItem="4iZ-7X-fdc" secondAttribute="top" constant="120" id="esK-lq-UUm"/>
+                                <constraint firstItem="h0X-7E-iiY" firstAttribute="leading" secondItem="4iZ-7X-fdc" secondAttribute="leading" constant="50" id="wms-LR-aLl"/>
+                            </constraints>
+                        </view>
+                        <connections>
+                            <outlet property="dataSource" destination="7si-VI-bbQ" id="pGO-N6-qCI"/>
+                            <outlet property="delegate" destination="7si-VI-bbQ" id="bUs-ac-nIm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Login Error" id="kxb-bF-zef"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3iA-Mc-tPS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1721.7391304347827" y="-605.35714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dLR-1B-Wif">
+            <objects>
+                <navigationController id="DrL-n6-cYh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XmE-Tm-SbZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7si-VI-bbQ" kind="relationship" relationship="rootViewController" id="Pzq-QL-wMS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fgu-zL-tT6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832" y="-605"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Vv-1o-YkT">
             <objects>
@@ -248,7 +317,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhz-8V-XWe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="831.88405797101461" y="66.964285714285708"/>
+            <point key="canvasLocation" x="832" y="67"/>
         </scene>
     </scenes>
     <resources>

@@ -29,7 +29,7 @@ class LogInViewController: UIViewController {
             if user != nil {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
-//                self.performSegue(withIdentifier: "loginErrorSegue", sender: nil)
+                self.performSegue(withIdentifier: "loginErrorSegue", sender: nil)
                 print("Error: \(String(describing: error?.localizedDescription))")
             }
         }

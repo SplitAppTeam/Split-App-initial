@@ -1,31 +1,22 @@
 //
-//  AddAnEventViewController.swift
+//  LoginErrorViewController.swift
 //  Split App
 //
-//  Created by Yaying Liang on 4/8/22.
+//  Created by Yaying Liang on 4/15/22.
 //
 
 import UIKit
 
-class AddAnEventViewController: UIViewController {
-    
-    @IBOutlet weak var eventNameField: UITextField!
-    @IBOutlet weak var eventDate: UIDatePicker!
-    
+class LoginErrorViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func backToLogin(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
     
-    @IBAction func doneAddAnEvent(_ sender: Any) {
-        
-    }
-    
-    @IBAction func cancelAddAnEvent(_ sender: Any) {
+    @IBAction func onLoginError(_ sender: Any) {
+        // go back to the login screen
         dismiss(animated: true, completion: nil)
     }
     
