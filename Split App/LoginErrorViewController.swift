@@ -15,10 +15,7 @@ class LoginErrorViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func onLoginError(_ sender: Any) {
-        // go back to the login screen
-        dismiss(animated: true, completion: nil)
-    }
+
     
     /*
     // MARK: - Navigation

@@ -13,36 +13,36 @@
             <objects>
                 <viewController title="SigninScreen" wantsFullScreenLayout="YES" id="BYZ-38-t0r" customClass="LogInViewController" customModule="Split_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Split_Logo_2x" translatesAutoresizingMaskIntoConstraints="NO" id="jLw-Cd-50D">
-                                <rect key="frame" x="87" y="205" width="240" height="128"/>
+                                <rect key="frame" x="87" y="178" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="lGT-fQ-dfR"/>
                                     <constraint firstAttribute="height" constant="128" id="zzI-o3-RYm"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRr-j4-K5z">
-                                <rect key="frame" x="180" y="155" width="54" height="30"/>
+                                <rect key="frame" x="180" y="128" width="54" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fk-pX-iSi">
-                                <rect key="frame" x="60" y="399" width="98" height="24"/>
+                                <rect key="frame" x="60" y="372" width="98" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBE-6d-Rra">
-                                <rect key="frame" x="60" y="506" width="85" height="24"/>
+                                <rect key="frame" x="60" y="479" width="85" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tB3-Uw-gfy">
-                                <rect key="frame" x="60" y="433" width="150" height="34"/>
+                                <rect key="frame" x="60" y="406" width="150" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="FQK-if-ulz"/>
                                 </constraints>
@@ -50,7 +50,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6QK-dT-Rmg" userLabel="Password">
-                                <rect key="frame" x="60" y="540" width="150" height="34"/>
+                                <rect key="frame" x="60" y="513" width="150" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="ZwL-V6-4dw"/>
                                     <constraint firstAttribute="height" constant="34" id="h0g-wE-kMx"/>
@@ -59,7 +59,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFh-b3-YE6">
-                                <rect key="frame" x="58" y="604" width="90" height="31"/>
+                                <rect key="frame" x="58" y="577" width="90" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="cqz-bc-9n4"/>
                                     <constraint firstAttribute="height" constant="31" id="zKn-n6-u58"/>
@@ -75,7 +75,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKf-hw-1Jb">
-                                <rect key="frame" x="238" y="604" width="90" height="31"/>
+                                <rect key="frame" x="238" y="577" width="90" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="BzU-jq-3bX"/>
                                     <constraint firstAttribute="height" constant="31" id="Z6i-qt-PqC"/>
@@ -168,7 +168,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Back" id="vwD-70-2xj">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="backToLogin:" destination="DbK-ef-atR" id="LpD-v9-b7O"/>
+                                <action selector="onBack:" destination="T0A-k2-sBU" id="87o-5E-bcy"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add an event" id="uka-nr-0hj" customClass="addAnEvent">
@@ -181,7 +181,6 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pk1-LU-uXl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="DbK-ef-atR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1743.4782608695652" y="66.964285714285708"/>
         </scene>
@@ -519,17 +518,6 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUw-Lw-Kwp">
-                                    <rect key="frame" x="125" y="176" width="120" height="31"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Back">
-                                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </buttonConfiguration>
-                                    <connections>
-                                        <action selector="onLoginError:" destination="7si-VI-bbQ" eventType="touchUpInside" id="4GL-IC-8cY"/>
-                                    </connections>
-                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
@@ -543,7 +531,14 @@
                             <outlet property="delegate" destination="7si-VI-bbQ" id="bUs-ac-nIm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Login Error" id="kxb-bF-zef"/>
+                    <navigationItem key="navigationItem" title="Login Error" id="kxb-bF-zef">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="ajg-1i-ylT">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" id="zwk-xJ-9Ek"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3iA-Mc-tPS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
