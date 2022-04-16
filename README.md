@@ -2,9 +2,26 @@
 
 The weekly development process of Split App
 
+## Week 2
+#### User Stories:
+**Goal**: Keep building the app.
+
+- [x] loginError screen
+- [x] create events screen
+- [x] cancel button in addAnEvent
+- [x] done button in addAnEvent
+- [x] add members
+- [x] create members table in back4app
+- [x] Discuss Paypal API
+
+#### GIF Walkthrough
+
+![SplitApp-week2](https://user-images.githubusercontent.com/75382121/163663752-66601b7b-0cb2-402a-bd73-ba4bfa58c315.gif)
+
+
 ## Week 1
 #### User Stories:
-- Goal: Initialize the project from scratch.
+**Goal**: Initialize the project from scratch.
 
 - [x] User sees app icon in home screen and styled launch screen.
 - [x] Set up the sign up and sign in storyboard.
