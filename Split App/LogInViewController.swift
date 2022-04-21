@@ -7,11 +7,23 @@
 
 import UIKit
 import Parse
+import BDBOAuth1Manager
 
 class LogInViewController: UIViewController {
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    
+    @IBAction func TwitterLoginBtn(_ sender: Any) {
+        let twitterURL = "https://api.twitter.com/oauth/request_token"
+        TwitterAPICaller.client?.login(url: twitterURL, success:{
+            //what we will do if the user successfully loged in to twitter account
+            UserDefaults.standard.set(true, forKey: "userLoggedIn")
+            self.performSegue(withIdentifier: "loginToHome", sender: self)
+        }, failure: { (Error) in
+            print("cannot be loged in!")
+        })
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,4 +71,9 @@ class LogInViewController: UIViewController {
     }
     */
 
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
+            self.performSegue(withIdentifier: "loginToHome", sender: self)
+        }
+    }
 }

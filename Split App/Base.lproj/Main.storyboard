@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -90,6 +90,20 @@
                                     <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kfH-7f-os3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WO2-eZ-mZm">
+                                <rect key="frame" x="58" y="638" width="167" height="31"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login With Twitter">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.63244220149999997" green="0.75987243739999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="TwitterLoginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UvI-8p-3tl"/>
+                                    <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rtz-hI-8gj"/>
+                                    <segue destination="GEg-iS-sSm" kind="presentation" identifier="loginToHome" id="C0L-iG-xZK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -104,11 +118,14 @@
                             <constraint firstItem="jLw-Cd-50D" firstAttribute="centerX" secondItem="fRr-j4-K5z" secondAttribute="centerX" id="Lss-o7-fp0"/>
                             <constraint firstItem="LKf-hw-1Jb" firstAttribute="baseline" secondItem="sFh-b3-YE6" secondAttribute="baseline" id="Nsz-L1-ghN"/>
                             <constraint firstItem="sFh-b3-YE6" firstAttribute="top" secondItem="6QK-dT-Rmg" secondAttribute="bottom" constant="30" id="RKg-cg-jHC"/>
+                            <constraint firstItem="WO2-eZ-mZm" firstAttribute="leading" secondItem="sFh-b3-YE6" secondAttribute="leading" id="XMc-nG-hlb"/>
                             <constraint firstItem="tB3-Uw-gfy" firstAttribute="leading" secondItem="XBE-6d-Rra" secondAttribute="leading" id="a9y-IO-o6T"/>
                             <constraint firstItem="tB3-Uw-gfy" firstAttribute="centerX" secondItem="6QK-dT-Rmg" secondAttribute="centerX" id="c8b-3g-Zaw"/>
                             <constraint firstItem="1fk-pX-iSi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-98" id="egn-VE-J6j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WO2-eZ-mZm" secondAttribute="trailing" constant="189" id="fOD-4H-8uZ"/>
                             <constraint firstItem="LKf-hw-1Jb" firstAttribute="leading" secondItem="sFh-b3-YE6" secondAttribute="trailing" constant="90" id="h16-gs-Ycv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LKf-hw-1Jb" secondAttribute="trailing" constant="86" id="i8s-iS-8A6"/>
+                            <constraint firstItem="WO2-eZ-mZm" firstAttribute="top" secondItem="sFh-b3-YE6" secondAttribute="bottom" constant="30" id="qhz-og-xzu"/>
                             <constraint firstItem="XBE-6d-Rra" firstAttribute="top" secondItem="tB3-Uw-gfy" secondAttribute="bottom" constant="39" id="spe-lv-1Cq"/>
                             <constraint firstItem="tB3-Uw-gfy" firstAttribute="leading" secondItem="1fk-pX-iSi" secondAttribute="leading" id="wc0-aS-Bcy"/>
                         </constraints>
@@ -579,6 +596,9 @@
             <point key="canvasLocation" x="832" y="67"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="C0L-iG-xZK"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Split_Logo_2x" width="120" height="120"/>
         <image name="camera" width="512" height="512"/>

@@ -7,6 +7,8 @@ target 'Split App' do
 	# Add Parse pods and install
  	pod 'Parse'
  	pod 'AlamofireImage'
+	pod 'AFNetworking'
+        pod 'BDBOAuth1Manager'
 
   # Pods for Split App
 

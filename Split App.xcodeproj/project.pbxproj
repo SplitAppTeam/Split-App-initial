@@ -18,6 +18,7 @@
 		318ACE1327FED2620063AE7F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318ACE1227FED2620063AE7F /* LogInViewController.swift */; };
 		318ACE1527FED2840063AE7F /* MainFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318ACE1427FED2840063AE7F /* MainFeedViewController.swift */; };
 		31CF030D280A595C005EBCD3 /* AddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF030C280A595C005EBCD3 /* AddMemberViewController.swift */; };
+		31D7E0372811FB5000B855A6 /* TwitterAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7E0362811FB5000B855A6 /* TwitterAPICaller.swift */; };
 		5665BEAF2B51668DD8BC1AF6 /* Pods_Split_App_Split_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 380A01CEE5D1CAF3890D7CD1 /* Pods_Split_App_Split_AppUITests.framework */; };
 		6DE80A47D4DB3EDA66005B4F /* Pods_Split_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866C638BF2A11EFBDC441670 /* Pods_Split_AppTests.framework */; };
 		9B98FCB6280A35500080487C /* LoginErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B98FCB5280A35500080487C /* LoginErrorViewController.swift */; };
@@ -62,6 +63,7 @@
 		318ACE1227FED2620063AE7F /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		318ACE1427FED2840063AE7F /* MainFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedViewController.swift; sourceTree = "<group>"; };
 		31CF030C280A595C005EBCD3 /* AddMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberViewController.swift; sourceTree = "<group>"; };
+		31D7E0362811FB5000B855A6 /* TwitterAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPICaller.swift; sourceTree = "<group>"; };
 		37127046E80D25A8A7DE2C1C /* Pods-Split App-Split AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Split App-Split AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Split App-Split AppUITests/Pods-Split App-Split AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		380A01CEE5D1CAF3890D7CD1 /* Pods_Split_App_Split_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Split_App_Split_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6956831D75419D6BAAF358 /* Pods-Split App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Split App.release.xcconfig"; path = "Target Support Files/Pods-Split App/Pods-Split App.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				9B98FCB5280A35500080487C /* LoginErrorViewController.swift */,
 				31CF030C280A595C005EBCD3 /* AddMemberViewController.swift */,
 				9B98FCBF280A8C180080487C /* AllEventsViewController.swift */,
+				31D7E0362811FB5000B855A6 /* TwitterAPICaller.swift */,
 			);
 			path = "Split App";
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B98FCC0280A8C180080487C /* AllEventsViewController.swift in Sources */,
+				31D7E0372811FB5000B855A6 /* TwitterAPICaller.swift in Sources */,
 				9B98FCC2280A8C8A0080487C /* EventCell.swift in Sources */,
 				31CF030D280A595C005EBCD3 /* AddMemberViewController.swift in Sources */,
 				318ACDE327FEC8460063AE7F /* AppDelegate.swift in Sources */,
