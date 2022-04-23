@@ -54,9 +54,9 @@ class AddAnEventViewController: UIViewController, UIImagePickerControllerDelegat
         event.saveInBackground{ (success, error) in
             if success {
                 self.dismiss(animated: true, completion: nil)
-                print("saved!")
+                print("new event saved!")
             } else {
-                print("error!")
+                print("new event save error!")
             }
         }
         

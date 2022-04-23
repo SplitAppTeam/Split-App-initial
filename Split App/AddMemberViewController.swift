@@ -9,7 +9,7 @@ import UIKit
 import Parse
 import MessageInputBar
 
-class AddMemberViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MessageInputBarDelegate {
+class AddMemberViewController: UIViewController, MessageInputBarDelegate {
     
     let memberBar = MessageInputBar()
     var members = [PFObject]()
@@ -28,31 +28,13 @@ class AddMemberViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     @IBAction func onAddButton(_ sender: Any) {
-        // add member to the members list of the event
-        let member = PFObject(className: "Members")
+        // find if the member exists in Members
+        var query = PFQuery(className: "Members")
+        query.whereKey("username", equalTo: memberField.text!)
         
         
     }
     
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        // query the members table
-        var membersQuery = PFQuery(className:"Members")
-        membersQuery.includeKeys("username")
-        membersQuery.findObjectsInBackground { (members, error) in
-            if members != nil {
-                self.members = members!
-                self.tableView.reloadData()
-            }
-        }
-        
-        // query the events table
-        var queryEvents = PFQuery(className: "Events")
-        queryEvents.includeKey(["author", "eventName", "eventDate", "totalAmount", "members", "peopleNumber", "splitAmount"])
-        
-    }
     
     override var inputAccessoryView: UIView? {
         return memberBar
