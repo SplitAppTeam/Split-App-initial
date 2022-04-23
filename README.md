@@ -2,6 +2,22 @@
 
 The weekly development process of Split App
 
+
+## Week 3
+#### User Stories:
+**Goal**: Keep adding features to the app.
+
+- [x] user can create event
+- [x] user can log in through linked Twitter account
+- [x] show existing events on the event feed view controller
+- [x] Calculating split amount after entering total payment and the number of members
+- [x] AddMember view Controller logics
+- [x] user can see details of the event
+
+#### GIF Walkthrough
+
+![SplitApp-week3](https://i.imgur.com/qooOuXc.gif)
+
 ## Week 2
 #### User Stories:
 **Goal**: Keep building the app.
