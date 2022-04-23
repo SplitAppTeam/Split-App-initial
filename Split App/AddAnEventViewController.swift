@@ -17,7 +17,19 @@ class AddAnEventViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var totalAmountField: UITextField!
     @IBOutlet weak var peopleField: UITextField!
     @IBOutlet weak var peopleStepper: UIStepper!
+    @IBOutlet weak var splitAmount: UILabel!
     
+    @IBAction func calculateSplit(_ sender: Any) {
+        //get bill amount from text field input
+                  let bill = Double(totalAmountField.text!) ?? 0
+                  
+                  //get total tip by multiplying tip * tippercentage
+                  let people = Double(peopleField.text!) ?? 0
+                  let split = bill / people
+                  
+                  //update tip amount label
+          splitAmount.text = String(format: "%.2f", split)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
