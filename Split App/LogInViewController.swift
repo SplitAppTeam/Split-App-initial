@@ -13,7 +13,6 @@ class LogInViewController: UIViewController {
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
     @IBAction func TwitterLoginBtn(_ sender: Any) {
         let twitterURL = "https://api.twitter.com/oauth/request_token"
         TwitterAPICaller.client?.login(url: twitterURL, success:{
@@ -58,6 +57,19 @@ class LogInViewController: UIViewController {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
                 print("Error: \(String(describing: error?.localizedDescription))")
+            }
+        }
+        
+        // create a members table
+        let member = PFObject(className: "Members")
+        
+        member["username"] = usernameField.text!
+        member.saveInBackground {(success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("user saved!")
+            } else {
+                print("user saving error!")
             }
         }
     }

@@ -20,6 +20,9 @@ PODS:
   - BDBOAuth1Manager (2.0.0):
     - AFNetworking/NSURLSession (~> 3.0.0)
   - Bolts/Tasks (1.9.1)
+  - MessageInputBar (0.4.1):
+    - MessageInputBar/Core (= 0.4.1)
+  - MessageInputBar/Core (0.4.1)
   - Parse (1.19.3):
     - Parse/Core (= 1.19.3)
   - Parse/Core (1.19.3):
@@ -29,6 +32,7 @@ DEPENDENCIES:
   - AFNetworking
   - AlamofireImage
   - BDBOAuth1Manager
+  - MessageInputBar
   - Parse
 
 SPEC REPOS:
@@ -38,6 +42,7 @@ SPEC REPOS:
     - AlamofireImage
     - BDBOAuth1Manager
     - Bolts
+    - MessageInputBar
     - Parse
 
 SPEC CHECKSUMS:
@@ -46,8 +51,9 @@ SPEC CHECKSUMS:
   AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   BDBOAuth1Manager: 92d17d06f8a648602962304cd2f35ae7394fa001
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
+  MessageInputBar: e81c7535347f1f7b923de7080409a535a004b6e4
   Parse: 0abb63a0ff6fa34a3f64b81d595a294e2ece143a
 
-PODFILE CHECKSUM: 0e63998acd709648374d14d63b742652c6913ad2
+PODFILE CHECKSUM: bbc1745bae7691e895c146b466367ce208fd7481
 
 COCOAPODS: 1.11.2

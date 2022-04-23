@@ -8,7 +8,8 @@ target 'Split App' do
  	pod 'Parse'
  	pod 'AlamofireImage'
 	pod 'AFNetworking'
-        pod 'BDBOAuth1Manager'
+  pod 'BDBOAuth1Manager'
+  pod  "MessageInputBar"
 
   # Pods for Split App
 

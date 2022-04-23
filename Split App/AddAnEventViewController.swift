@@ -40,6 +40,25 @@ class AddAnEventViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     @IBAction func doneAddAnEvent(_ sender: Any) {
+        let event = PFObject(className: "Events")
+        event["eventName"] = eventNameField.text!
+        event["eventDate"] = eventDate.date
+        event["totalAmount"] = totalAmountField.text!
+        event["peopleNumber"] = peopleField.text!
+        event["splitAmount"] = splitAmount.text!
+        
+        let imageData = imageView.image!.pngData()
+        let file = PFFileObject(name: "image.png", data: imageData!)
+        event["eventImage"] = file
+        
+        event.saveInBackground{ (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("saved!")
+            } else {
+                print("error!")
+            }
+        }
         
     }
     
